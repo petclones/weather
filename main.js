@@ -18,7 +18,7 @@ let weather = {
         const {feels_like} = data.main
         document.querySelector('.weather').classList.remove('hidden')
         document.querySelector('.rain').src= `video/${description}.mp4`
-        document.querySelector('.bart').src= `/wear/${round(temp)}.png`
+        document.querySelector('.bart').src= `.../wear/${round(temp)}.png`
         document.querySelector('.city').innerText = `Weather in ${name}`
         document.querySelector('.description').innerText = description
         document.querySelector('.temp').innerText = `${Math.trunc(temp)}℃`
@@ -79,3 +79,4 @@ function asd2 () {
 function asd3 () {
     document.querySelector('.invalid').classList.add('visibility')
 }
+
